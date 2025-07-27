@@ -1,0 +1,69 @@
+{
+  "name": "vibeicons",
+  "version": "1.0.0",
+  "description": "An animated SVG icon library for React",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest",
+    "lint": "eslint . --ext .ts,.tsx",
+    "generate:icon": "node scripts/generate-icon.js",
+    "prepack": "npm run build",
+    "postpack": "rm -rf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manishhansal/vibeicons.git"
+  },
+  "keywords": [
+    "react",
+    "icons",
+    "svg",
+    "animated",
+    "framer-motion"
+  ],
+  "author": "Manish Kumar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manishhansal/vibeicons/issues"
+  },
+  "homepage": "https://github.com/manishhansal/vibeicons#readme",
+  "peerDependencies": {
+    "framer-motion": ">=11.0.0",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.4",
+    "@testing-library/react": "^16.3.0",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "framer-motion": "^12.23.9",
+    "jest-environment-jsdom": "^30.0.5",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.6",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {}
+}
